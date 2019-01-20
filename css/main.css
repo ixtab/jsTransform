@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0; 
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+}
+
+#contenedor {
+  position: absolute;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#titulo{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+h1{
+  text-shadow: #a00 0px 0px 1px, #a00 0px 0px 1px;
+}
+
+#cuervo {
+  cursor: crosshair;
+}
+
+img {
+  position: absolute;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+}
+.tiembla {
+    animation: shake 0.1s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) skewY(0deg) skewX(0deg) ; }
+  10% { transform: translate(-1px, -2px) skewY(1deg) skewX(-1deg) ; }
+  20% { transform: translate(-3px, 0px) skewY(-1deg) skewX(1deg) ; }
+  30% { transform: translate(3px, 2px) skewY(0deg) skewX(0deg) ; }
+  40% { transform: translate(1px, -1px) skewY(-1deg) skewX(1deg) ; }
+  50% { transform: translate(-1px, 2px) skewY(1deg) skewX(-1deg) ; }
+  60% { transform: translate(-3px, 1px) skewY(0deg) skewX(0deg) ; }
+  70% { transform: translate(3px, 1px) skewY(1deg) skewX(-1deg) ; }
+  80% { transform: translate(-1px, -1px) skewY(-1deg) skewX(1deg) ; }
+  90% { transform: translate(1px, 2px) skewY(0deg) skewX(0deg) ; }
+  100% { transform: translate(1px, -2px) skewY(1deg) skewX(-1deg) ; }
+}
+
+.gira {
+  animation: vueltas 0.01s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vueltas {
+  0% { transform: rotate(0deg) ;}
+  10% { transform: rotate(36deg) ;}
+  20% { transform: rotate(72deg) ;}
+  30% { transform: rotate(108deg) ;}
+  40% { transform: rotate(144deg) ;}
+  50% { transform: rotate(180deg) ;}
+  60% { transform: rotate(216deg) ;}
+  70% { transform: rotate(252deg) ;}
+  80% { transform: rotate(288deg) ;}
+  90% { transform: rotate(324deg) ;}
+  100% { transform: rotate(360deg) ;}
+}
